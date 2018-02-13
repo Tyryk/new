@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="exampleApp">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-route.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="script.js"></script>
+	<link rel="stylesheet" href="style.css"> </head>
+
+<body ng-controller="taskCtrl as task">
+	<div class="container">
+		<header class="{{task.changeStyle.header}}">
+			<h1>MY ANGULAR PAGE</h1>
+			<h3>You can change style</h3> 
+			<button type="button" class="btn btn-overline-success btn-sm" ng-click="task.change1()">Style 1</button>
+			<button type="button" class="btn btn-overline-success btn-sm" ng-click="task.change2()">Style 2</button>
+			<button type="button" class="btn btn-overline-success btn-sm" ng-click="task.change3()">Style 3</button>
+			</header>
+			<main>
+				<div class="box {{task.changeStyle.box1}}">
+					<h2>Column 1</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta molestiae obcaecati voluptatum laborum repellat qui cupiditate corporis, harum blanditiis beatae! Voluptas doloremque, necessitatibus quo quis ipsa animi quam neque dolorum.
+					</p>
+				</div>
+				<div class="box {{task.changeStyle.box2}}">
+					<h2>Column 2</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta molestiae obcaecati voluptatum laborum repellat qui cupiditate corporis, harum blanditiis beatae! Voluptas doloremque, necessitatibus quo quis ipsa animi quam neque dolorum.
+					</p>
+				</div>
+				<div class="box {{task.changeStyle.box3}}">
+					<h2>Column 3</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta molestiae obcaecati voluptatum laborum repellat qui cupiditate corporis, harum blanditiis beatae! Voluptas doloremque, necessitatibus quo quis ipsa animi quam neque dolorum.
+					</p>
+				</div>
+			</main>
+	</div>
+</body>
+
+</html>
